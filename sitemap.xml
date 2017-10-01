@@ -1,53 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>&#x2F;</loc>
+    <loc>https:&#x2F;&#x2F;christophercrouzet.github.io&#x2F;eddi</loc>
         <lastmod>2017-09-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
 
     <url>
-      <loc>&#x2F;blog&#x2F;bytes&#x2F;some-photos</loc>
+      <loc>https:&#x2F;&#x2F;christophercrouzet.github.io&#x2F;eddi&#x2F;blog&#x2F;bytes&#x2F;some-photos</loc>
       <lastmod>2017-09-06</lastmod>
       <priority>1.0</priority>
     </url>
     <url>
-      <loc>&#x2F;blog&#x2F;bytes&#x2F;meme-mother</loc>
+      <loc>https:&#x2F;&#x2F;christophercrouzet.github.io&#x2F;eddi&#x2F;blog&#x2F;bytes&#x2F;meme-mother</loc>
       <lastmod>2017-09-05</lastmod>
       <priority>1.0</priority>
     </url>
     <url>
-      <loc>&#x2F;about</loc>
+      <loc>https:&#x2F;&#x2F;christophercrouzet.github.io&#x2F;eddi&#x2F;about</loc>
       <lastmod>2017-09-04</lastmod>
       <priority>1.0</priority>
     </url>
     <url>
-      <loc>&#x2F;resume</loc>
+      <loc>https:&#x2F;&#x2F;christophercrouzet.github.io&#x2F;eddi&#x2F;resume</loc>
       <lastmod>2017-09-04</lastmod>
       <priority>1.0</priority>
     </url>
     <url>
-      <loc>&#x2F;blog&#x2F;bits&#x2F;hello-world</loc>
+      <loc>https:&#x2F;&#x2F;christophercrouzet.github.io&#x2F;eddi&#x2F;blog&#x2F;bits&#x2F;hello-world</loc>
       <lastmod>2017-01-01</lastmod>
       <priority>1.0</priority>
     </url>
 
     <url>
-      <loc>&#x2F;blog</loc>
+      <loc>https:&#x2F;&#x2F;christophercrouzet.github.io&#x2F;eddi&#x2F;blog</loc>
       <priority>0.5</priority>
     </url>
     <url>
-      <loc>&#x2F;blog&#x2F;bits</loc>
+      <loc>https:&#x2F;&#x2F;christophercrouzet.github.io&#x2F;eddi&#x2F;blog&#x2F;bits</loc>
       <priority>0.5</priority>
     </url>
     <url>
-      <loc>&#x2F;blog&#x2F;bytes</loc>
+      <loc>https:&#x2F;&#x2F;christophercrouzet.github.io&#x2F;eddi&#x2F;blog&#x2F;bytes</loc>
       <priority>0.5</priority>
     </url>
 
   <url>
-    <loc>&#x2F;feed</loc>
+    <loc>https:&#x2F;&#x2F;christophercrouzet.github.io&#x2F;eddi&#x2F;feed</loc>
     <priority>0.1</priority>
   </url>
 </urlset> 
