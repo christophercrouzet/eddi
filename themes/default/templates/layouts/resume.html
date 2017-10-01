@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="{{language}}" prefix="{{> og-prefixes.html}}">
+  <head>
+    {{> meta.html}}
+    {{> og.html}}
+    {{> twitter.html}}
+
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "{{schemaType}}",
+      "url": "{{{url.full}}}",
+      "name": "{{title}}",
+      "author": "{{author.name}}",
+      "description": "{{description}}",
+    }
+    </script>
+  </head>
+  <body class="page">
+    {{> nav.html}}
+    <main class="resume page__main" data-eddi-content>
+        {{#_.renderMedia}}profile{{/_.renderMedia}}
+        <h1 class="resume__name h1" data-eddi-no-anchor><span class="resume__given-name">{{author.givenName}}</span> <span class="resume__family-name">{{author.familyName}}</span></h1>
+        {{#titles.length}}
+          <ul class="resume__titles list list_plain">
+            {{#titles}}
+              <li>{{.}}</li>
+            {{/titles}}
+          </ul>
+        {{/titles.length}}
+        {{#downloadURL}}
+          <p class="resume__download">
+            <a class="download" href="{{downloadURL}}">
+              <span class="icon-download icon_inline download__icon" aria-hidden="true"></span>
+              <span class="download__text">Download Résumé</span>
+            </a>
+          </p>
+        {{/downloadURL}}
+
+        {{#intro.length}}
+          <h1 class="h1">Intro</h1>
+          {{#intro}}
+            <p>{{{.}}}</p>
+          {{/intro}}
+        {{/intro.length}}
+
+        {{#skills.length}}
+          <h1 class="h1">Skills</h1>
+          <ul class="grid list list_plain">
+            {{#skills}}
+              <li class="grid__item">
+                <span class="icon-{{icon}} grid__icon" aria-hidden="true"></span>
+                <div class="grid__content">
+                  <h2 class="grid__title h3">{{title}}</h2>
+                  <p class="grid__description">{{{text}}}</p>
+                  {{#tools.length}}
+                    <p class="info inline">Tools:</p>
+                    <ul class="info list list_comma list_plain">
+                      {{#tools}}
+                        <li class="list__item">{{{.}}}</li>
+                      {{/tools}}
+                    </ul>
+                  {{/tools.length}}
+              </li>
+            {{/skills}}
+          </ul>
+        {{/skills.length}}
+
+        {{#experience.length}}
+          <h1 class="h1">Experience</h1>
+          <ol class="timeline list list_plain">
+            {{#experience}}
+              <li class="timeline__item">
+                <div class="timeline__info timeline__item_side_left">
+                  <h2 class="timeline__period h2">
+                    {{#from.obj}}
+                      <time datetime="{{from.date}}">{{from.shortMonthName}} {{from.year}}</time>
+                    {{/from.obj}}
+                    {{^from.obj}}{{from.raw}}{{/from.obj}}
+                    -
+                    {{#to.obj}}
+                      <time datetime="{{to.date}}">{{to.shortMonthName}} {{to.year}}</time>
+                    {{/to.obj}}
+                    {{^to.obj}}{{to.raw}}{{/to.obj}}
+                  </h2>
+                  {{#duration}}
+                    <p class="timeline__duration h4">({{duration}})</p>
+                  {{/duration}}
+                </div>
+                <div class="timeline__summary">
+                  <h3 class="timeline__header">
+                    <span class="resume__heading h3">{{role}}</span>
+                    {{#company}}
+                      <span class="resume__workplace">
+                        at <span class="resume__company">{{.}}</span>
+                      </span>
+                    {{/company}}
+                  </h3>
+                  <p class="info resume__location timeline__item_side_left">
+                    <span class="icon-location icon_inline" aria-hidden="true"></span>
+                    {{location}}
+                  </p>
+                  {{#text}}
+                    <p class="timeline__content">{{{.}}}</p>
+                  {{/text}}
+                  {{#projects.length}}
+                    <div class="timeline__footer">
+                      <p class="info inline">Projects:</p>
+                      <ul class="info list list_comma list_plain">
+                        {{#projects}}
+                          <li class="list__item">{{{.}}}</li>
+                        {{/projects}}
+                      </ul>
+                    </div>
+                  {{/projects.length}}
+                </div>
+              </li>
+            {{/experience}}
+          </ol>
+        {{/experience.length}}
+
+        {{#education.length}}
+          <h1 class="h1">Education</h1>
+          <ol class="timeline list list_plain">
+            {{#education}}
+              <li class="timeline__item">
+                <div class="timeline__info timeline__item_side_left">
+                  <h2 class="timeline__period h2">
+                    {{#date.obj}}
+                      <time datetime="{{date.date}}">{{date.shortMonthName}} {{date.year}}</time>
+                    {{/date.obj}}
+                    {{^date.obj}}{{date.raw}}{{/date.obj}}
+                  </h2>
+                </div>
+                <div class="timeline__summary">
+                  <h3 class="timeline__header">
+                    <span class="resume__heading h3">{{title}}</span>
+                  </h3>
+                  <p class="info resume__location timeline__item_side_left">
+                    <span class="icon-location icon_inline" aria-hidden="true"></span>
+                    {{location}}
+                  </p>
+                  {{#text}}
+                    <p class="timeline__content">{{{.}}}</p>
+                  {{/text}}
+                </div>
+              </li>
+            {{/education}}
+          </ol>
+        {{/education.length}}
+    </main>
+    {{> footer.html}}
+  </body>
+</html>

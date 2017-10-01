@@ -1,0 +1,23 @@
+{
+  "layout": "index.html",
+  "entry": false,
+  "index": true,
+  "ogType": "website",
+  "title": "Articles",
+  "description": "Discover all the articles that this blog has to offer, mostly touching the topics of CG and software development.",
+  "keywords": ["articles", "blog", "cg", "software development"],
+  "categories": {
+    "main": {
+      "section": "blog",
+      "includeSection": true
+    }
+  },
+  "entries": {
+    "main": {
+      "section": "blog"
+    }
+  }
+}
+
+
+;;;

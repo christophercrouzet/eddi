@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>{{siteURL.full}}</loc>
+    {{#entries.main}}
+      {{#first}}
+        <lastmod>{{dateLatestUpdate.date}}</lastmod>
+      {{/first}}
+    {{/entries.main}}
+    <changefreq>{{updateFrequency}}</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  {{#entries.main}}
+    <url>
+      <loc>{{url.full}}</loc>
+      <lastmod>{{dateUpdated.date}}</lastmod>
+      <priority>1.0</priority>
+    </url>
+  {{/entries.main}}
+
+  {{#categories.main}}
+    <url>
+      <loc>{{url.full}}</loc>
+      <priority>0.5</priority>
+    </url>
+  {{/categories.main}}
+
+  <url>
+    <loc>{{feedURL.full}}</loc>
+    <priority>0.1</priority>
+  </url>
+</urlset> 

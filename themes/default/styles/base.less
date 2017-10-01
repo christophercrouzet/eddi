@@ -1,0 +1,74 @@
+/*
+ * Styling for the base elements.
+ */
+
+.page {
+  line-height: 1.5;
+
+  .breakpoint-full({
+    font-size: @breakpoint-full-font-size;
+  });
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-weight: 300;
+}
+
+.h1 {
+  font-size: 1.75em;
+
+  .breakpoint-full({
+    @font-size: 2.25em;
+    font-size: @font-size / @breakpoint-full-font-size;
+  });
+}
+
+.h2 {
+  font-size: 1.5em;
+
+  .breakpoint-full({
+    @font-size: 1.75em;
+    font-size: @font-size / @breakpoint-full-font-size;
+  });
+}
+
+.h3 {
+  font-size: 1.1875em;
+
+  .breakpoint-full({
+    @font-size: 1.375em;
+    font-size: @font-size / @breakpoint-full-font-size;
+  });
+}
+
+.h4 {
+  font-size: 1em;
+
+  .breakpoint-full({
+    @font-size: 1.1875em;
+    font-size: @font-size / @breakpoint-full-font-size;
+  });
+}
+
+.h5 {
+  font-size: 0.875em;
+
+  .breakpoint-full({
+    @font-size: 1em;
+    font-size: @font-size / @breakpoint-full-font-size;
+  });
+}
+
+.h6 {
+  font-size: 0.75em;
+
+  .breakpoint-full({
+    @font-size: 0.875em;
+    font-size: @font-size / @breakpoint-full-font-size;
+  });
+}

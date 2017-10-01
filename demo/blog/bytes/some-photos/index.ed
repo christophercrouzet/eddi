@@ -1,0 +1,100 @@
+{
+  "title": "Some Photos",
+  "description": "You want photos? Here you go.",
+  "uid": "a8706aa4-9dfb-11e7-b061-a3a1a89b0179",
+  "dateCreated": "2017-09-06",
+  "keywords": ["gallery", "photos"],
+  "medias": {
+    "before-sunrise": {
+      "src": "./before-sunrise-salar-uyuni-bolivia.jpg",
+      "size": [640, 360],
+      "alt": "Before sunrise, Salar of Uyuni, Bolivia",
+      "link": "https://www.flickr.com/photos/christophercrouzet/14273438908",
+      "linkText": "View on Flickr"
+    },
+    "cape-foulwind": {
+      "src": "./cape-foulwind-new-zealand.jpg",
+      "size": [975, 360],
+      "alt": "Cape Foulwind, New Zealand",
+      "link": "https://www.flickr.com/photos/christophercrouzet/8392911549",
+      "linkText": "View on Flickr"
+    },
+    "jeep": {
+      "src": "./jeep-salar-uyuni-bolivia.jpg",
+      "size": [540, 360],
+      "alt": "Jeep, Salar of Uyuni, Bolivia",
+      "link": "https://www.flickr.com/photos/christophercrouzet/14268581117",
+      "linkText": "View on Flickr"
+    },
+    "orange-shoes": {
+      "src": "./orange-shoes.jpg",
+      "size": [360, 360],
+      "alt": "Orange shoes",
+      "link": "https://www.flickr.com/photos/christophercrouzet/4878682189",
+      "linkText": "View on Flickr"
+    },
+    "semuc-champey": {
+      "src": "./semuc-champey-guatemala.jpg",
+      "size": [640, 360],
+      "alt": "Semuc Champey, Guatemala",
+      "link": "https://www.flickr.com/photos/christophercrouzet/11780523626",
+      "linkText": "View on Flickr"
+    },
+    "sunset-copacabana": {
+      "src": "./sunset-copacabana-bolivia.jpg",
+      "size": [1067, 360],
+      "alt": "Sunset, Copacabana, Bolivia",
+      "link": "https://www.flickr.com/photos/christophercrouzet/14055158066",
+      "linkText": "View on Flickr"
+    },
+    "sunset-hanoi": {
+      "src": "./sunset-hanoi-vietnam.jpg",
+      "size": [1058, 360],
+      "alt": "Sunset, Hanoi, Vietnam",
+      "link": "https://www.flickr.com/photos/christophercrouzet/18415261942",
+      "linkText": "View on Flickr"
+    },
+    "surf-rescue": {
+      "src": "./surf-rescue-sydney-australia.jpg",
+      "size": [320, 320],
+      "alt": "Surf rescue, Sydney, Australia",
+      "link": "https://www.flickr.com/photos/christophercrouzet/4292223265",
+      "linkText": "View on Flickr"
+    },
+    "volcano": {
+      "src": "./volcano-pacaya-guatemala.jpg",
+      "size": [640, 360],
+      "alt": "Volcano Pacaya, Guatemala",
+      "link": "https://www.flickr.com/photos/christophercrouzet/11762321286",
+      "linkText": "View on Flickr"
+    }
+  },
+  "galleries": {
+    "photo": {
+      "alignToPage": false,
+      "width": "80rem",
+      "rowHeight": 240,
+      "medias": [
+        "sunset-hanoi",
+        "before-sunrise",
+        "jeep",
+        "sunset-copacabana",
+        "semuc-champey",
+        "surf-rescue",
+        "volcano",
+        "orange-shoes",
+        "cape-foulwind"
+      ]
+    }
+  }
+}
+
+
+;;;
+
+I took some photos. I mean. I didn’t take them myself. I took them from the internet. At least I’m being honest, not like many humans who display the hard work of others as if it were their own.
+
+
+::: gallery
+photo
+:::

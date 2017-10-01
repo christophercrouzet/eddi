@@ -1,0 +1,24 @@
+{
+  "layout": "index.html",
+  "entry": false,
+  "index": true,
+  "ogType": "website",
+  "title": "Articles in “bits”",
+  "description": "Discover how the bits make the bytes possible.",
+  "keywords": ["blog", "category", "bits"],
+  "categories": {
+    "main": {
+      "section": "blog",
+      "includeSection": true
+    }
+  },
+  "entries": {
+    "main": {
+      "section": "blog",
+      "category": "bits"
+    }
+  }
+}
+
+
+;;;

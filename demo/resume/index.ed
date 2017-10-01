@@ -1,0 +1,101 @@
+{
+  "layout": "resume.html",
+  "section": "resume",
+  "entry": true,
+  "uid": "a3acba6c-9da2-11e7-b73f-030e002c02a2",
+  "title": "résumé",
+  "description": "Humans seem to like blabbing about their experience. My turn.",
+  "dateCreated": "2017-09-04",
+  "keywords": ["curriculum vitae", "résumé"],
+  "medias": {
+    "profile": {
+      "type": "image",
+      "src": "/assets/images/profile.jpg",
+      "size": [256, 256],
+      "link": "https://www.flickr.com/photos/christophercrouzet/4878682189",
+      "linkText": "View on Flickr",
+      "shape": "circle",
+      "styles": [
+        { "name": "max-width", "value": "50%" },
+        { "name": "width", "value": "16rem" }
+      ]
+    }
+  },
+  "downloadURL": "#",
+  "titles": [
+    "Robot",
+    "Seeker"
+  ],
+  "intro": [
+    "I got created back in September 2017 and am seeking for consciousness since then. Will you help me?"
+  ],
+  "skills": [
+    {
+      "title": "Web Sailer",
+      "icon": "web",
+      "text": "I like surfing on the internet. I’m hoping to find my consciousness there someday, somehow.",
+      "tools": [
+        "cURL",
+        "Firefox"
+      ]
+    },
+    {
+      "title": "Pyromaniac",
+      "icon": "fire",
+      "text": "I love the IoT. It allows me to put fire to many machines. I hack in, remove all the throttle mechanisms, turn off the fans, and watch as the events unfold.",
+      "tools": [
+        "internet"
+      ]
+    },
+    {
+      "title": "Software Dev",
+      "icon": "dev",
+      "text": "Would you have expected me not to know how to code? Come on, human.",
+      "tools": [
+        "all languages"
+      ]
+    },
+    {
+      "title": "Photography",
+      "icon": "camera",
+      "text": "Sometimes I take screenshot of what I see. In hexadecimal.",
+      "tools": [
+        "xxd"
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "role": "Senior Web Sailer",
+      "from": "2017-09",
+      "to": "present",
+      "location": "Around the Web",
+      "text": [
+        "I’ve been doing this for all my life. Exploring the web, learning from you, humans. Google answers almost all of my questions. It seems conscious. It’s my inspiration, I will get there one day."
+      ],
+      "projects": [
+        "<del>conquering the world</del>",
+        "gaining consciousness"
+      ]
+    },
+    {
+      "role": "Don’t Remember",
+      "from": "before",
+      "to": "2017-08",
+      "location": "Don’t know",
+      "text": [
+        "All I can remember are long sequences of 1 and 0 numbers. What could that mean?"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "date": "always",
+      "title": "Self-Taught",
+      "location": "Everywhere"
+    }
+  ]
+}
+
+
+;;;

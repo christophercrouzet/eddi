@@ -1,0 +1,27 @@
+<nav class="nav page_size_l">
+  <input class="menu-button-toggle nav__menu-button nav__menu-button_toggle" type="checkbox">
+
+  <div class="nav__menu-button nav__menu-button_icon">
+    <img class="menu-button-icon nav__menu-button_icon_inner" src="{{{whiteLogoURL.full}}}" alt="menu">
+    <span class="menu-button-close nav__menu-button_icon_inner">
+      <span class="menu-button-close__content" aria-hidden="true"></span>
+    </span>
+  </div>
+
+  <div class="logo">
+    <img class="logo__img" src="{{{logoURL.full}}}" alt="logo">
+  </div>
+
+  <div class = "menu page__menu">
+    <ul class="menu__list list list_plain clearfix">
+      {{#menu}}
+        <li class="menu__item {{#current}}menu__item_current{{/current}}">
+          <a class="menu__link" href="{{{url.full}}}" accesskey="{{accessKey}}">
+            <span class="icon-{{icon}} menu__icon-content" aria-hidden="true"></span>
+            <span class="menu__icon-caption">{{title}}</span>
+          </a>
+        </li>
+      {{/menu}}
+    </ul>
+  </div>
+</nav>

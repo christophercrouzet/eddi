@@ -1,0 +1,81 @@
+/*
+ * Page layout.
+ */
+
+.page {
+  &__block {
+    margin-bottom: 2.5rem;
+    margin-top: 2.5rem;
+
+    .breakpoint-full({
+      margin-left: @page-hpadding;
+      margin-right: @page-hpadding;
+    });
+  }
+
+  &__categories {
+    margin-bottom: 2rem;
+  }
+
+  &__heading {
+    margin-top: 2em;
+  }
+
+  &__horizontal-rule {
+    margin-bottom: @splitter-vmargin;
+    margin-top: @splitter-vmargin;
+  }
+
+  &__footer {
+    margin-bottom: 2rem;
+  }
+
+  &__footer-splitter {
+    margin-bottom: 2.5rem;
+    margin-top: 3.5rem;
+  }
+
+  &__main {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+
+  &__media {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+
+  &__menu {
+    position: fixed;
+    right: -@menu-width;
+    top: 0;
+    transition: right 0.1s linear;
+
+    .breakpoint-full({
+      position: unset;
+    });
+  }
+
+  &__section {}
+
+  &_center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &_size_m {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: @size_m;
+    padding-left: @page-hpadding;
+    padding-right: @page-hpadding;
+  }
+
+  &_size_l {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: @size_l;
+    padding-left: @page-hpadding;
+    padding-right: @page-hpadding;
+  }
+}

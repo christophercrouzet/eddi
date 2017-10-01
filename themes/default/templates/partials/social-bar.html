@@ -1,0 +1,12 @@
+{{#socialBar.length}}
+  <ul class="social-bar list list_plain">
+    {{#socialBar}}
+      <li class="social-bar__item">
+        <a class="social-icon social-icon_{{icon}} social-bar__item-link" href="{{{url.full}}}" {{#urlType}}type="{{.}}"{{/urlType}}>
+          <span class="icon-{{icon}} social-icon__content" aria-hidden="true"></span>
+          <span class="social-icon__caption">{{title}}</span>
+        </a>
+      </li>
+    {{/socialBar}}
+  </ul>
+{{/socialBar.length}}

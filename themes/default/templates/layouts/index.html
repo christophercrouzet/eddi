@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="{{language}}" prefix="{{> og-prefixes.html}}">
+  <head>
+    {{> meta.html}}
+    {{> og.html}}
+    {{> twitter.html}}
+
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "{{schemaType}}",
+      "url": "{{{url.full}}}",
+      "name": "{{title}}",
+      "author": "{{author.name}}",
+      "description": "{{description}}",
+      "mainEntityOfPage": {
+        "@type": "Blog",
+        {{#entries.main}}
+          "blogPost": {
+            "@type": "BlogPosting",
+            "headline": "{{title}}",
+            "articleSection": "{{category.title}}",
+            "dateCreated": "{{dateCreated.date}}",
+            "dateModified": "{{dateUpdated.date}}",
+            "thumbnailUrl": "{{{thumbnailURL.full}}}",
+          },
+        {{/entries.main}}
+      },
+    }
+    </script>
+  </head>
+  <body class="page">
+    {{> nav.html}}
+    <main class="page__main" data-eddi-content>
+      <h1 class="h1">{{title}}</h1>
+      {{#categories.main}}
+        {{> categories.html}}
+      {{/categories.main}}
+      {{#entries.main}}
+        {{> entries.html}}
+      {{/entries.main}}
+    </main>
+    {{> footer.html}}
+  </body>
+</html>

@@ -1,0 +1,42 @@
+/*
+ * Links.
+ */
+
+.link-base() {
+  color: unset;
+  text-decoration: none;
+}
+
+.link-default() {
+  border-bottom: @relative-pixel-size solid transparent;
+  color: @color-link;
+  text-decoration: none;
+
+  &:hover {
+    border-bottom-color: @color-link-hover;
+    color: @color-link-hover;
+    transition: border-bottom-color 0.1s linear, color 0.1s linear;
+  }
+}
+
+.link-underlined() {
+  border-bottom: @relative-pixel-size solid @color-grey-lightest;
+  color: unset;
+  text-decoration: none;
+
+  &:hover {
+    border-bottom-color: @color-link-hover;
+    color: @color-link-hover;
+    transition: border-bottom-color 0.1s linear, color 0.1s linear;
+  }
+}
+
+.link-not-underlined() {
+  color: unset;
+  text-decoration: none;
+
+  &:hover {
+    color: @color-link-hover;
+    transition: color 0.1s linear;
+  }
+}

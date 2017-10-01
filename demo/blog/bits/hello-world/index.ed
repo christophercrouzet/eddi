@@ -1,0 +1,363 @@
+{
+  "uid": "1523b17c-9df4-11e7-9b48-677d07ddd883",
+  "title": "Hello, World",
+  "description": "Learning to speak HTML.",
+  "dateCreated": "2017-01-01",
+  "keywords": ["hello", "world"],
+  "medias": {
+    "card-1": {
+      "src": "/assets/images/image-160.gif",
+      "size": [160, 160],
+      "alt": "card 1",
+      "align": "left",
+      "captionAlign": "center",
+      "captions": [
+        "first card"
+      ]
+    },
+    "card-2": {
+      "src": "/assets/images/image-160.gif",
+      "size": [160, 160],
+      "alt": "card 2",
+      "align": "left",
+      "captionAlign": "center",
+      "captions": [
+        "Second card. This one has a <strong>slightly</strong> longer description."
+      ]
+    },
+    "card-3": {
+      "src": "/assets/images/image-160.gif",
+      "size": [160, 160],
+      "alt": "card 3",
+      "align": "left",
+      "captionAlign": "center",
+      "captions": [
+        "third card"
+      ]
+    },
+    "card-4": {
+      "src": "/assets/images/image-160.gif",
+      "size": [160, 160],
+      "alt": "card 4",
+      "align": "left",
+      "captionAlign": "center",
+      "captions": [
+        "fourth card"
+      ]
+    },
+    "card-5": {
+      "src": "/assets/images/image-320.gif",
+      "size": [320, 180],
+      "alt": "card 5",
+      "align": "left",
+      "captionAlign": "center",
+      "captions": [
+        "fifth card"
+      ]
+    },
+    "image-centered": {
+      "src": "/assets/images/image-320.gif",
+      "size": [320, 180],
+      "captions": [
+        "centered image"
+      ]
+    },
+    "image-left-aligned": {
+      "src": "/assets/images/image-320.gif",
+      "size": [320, 180],
+      "align": "left",
+      "alignToPage": true,
+      "captions": [
+        "left aligned image"
+      ]
+    },
+    "image-right-aligned": {
+      "src": "/assets/images/image-320.gif",
+      "size": [320, 180],
+      "align": "right",
+      "alignToPage": true,
+      "captions": [
+        "right aligned image"
+      ]
+    },
+    "image-large": {
+      "src": "/assets/images/image-1280.gif",
+      "size": [1280, 720],
+      "shape": "default",
+      "fullWidth": true,
+      "captions": [
+        "full width image"
+      ]
+    },
+    "image-left-floating": {
+      "src": "/assets/images/image-160.gif",
+      "size": [160, 160],
+      "align": "float-left",
+      "captions": [
+        "floating image"
+      ]
+    },
+    "image-right-floating": {
+      "src": "/assets/images/image-160.gif",
+      "size": [160, 160],
+      "align": "float-right",
+      "captions": [
+        "floating image"
+      ]
+    },
+    "image-160": {
+      "src": "/assets/images/image-160.gif",
+      "size": [160, 160]
+    },
+    "image-320": {
+      "src": "/assets/images/image-320.gif",
+      "size": [320, 180]
+    },
+    "image-1280": {
+      "src": "/assets/images/image-1280.gif",
+      "size": [1280, 720]
+    },
+    "photo": {
+      "src": "./orange-shoes.jpg",
+      "size": [640, 640],
+      "link": "https://www.flickr.com/photos/christophercrouzet/4878682189",
+      "linkText": "View on Flickr"
+    },
+    "video": {
+      "src": "./flame.jpg",
+      "size": [640, 360],
+      "link": "https://vimeo.com/144316418",
+      "linkIcon": "play",
+      "linkText": "View on Vimeo"
+    }
+  },
+  "decks": {
+    "main": {
+      "title": "Deck",
+      "medias": [
+        "card-1",
+        "card-2",
+        "card-3",
+        "card-4",
+        "card-5"
+      ]
+    }
+  },
+  "galleries": {
+    "main": {
+      "width": "80rem",
+      "medias": [
+        "image-160",
+        "image-320",
+        "image-1280",
+        "image-1280",
+        "image-320",
+        "image-160",
+        "image-160",
+        "image-320",
+        "image-160",
+        "image-160"
+      ]
+    }
+  }
+}
+
+
+;;;
+
+
+Many humans seem to communicate with what is called HTML. Here I gathered its most common vocabulary. But for some reasons all the HTML below has been generated from Markdown.
+
+
+## 1\. Headers
+
+<div>
+
+# Heading 1
+
+## Heading 2
+
+### Heading 3
+
+#### Heading 4
+
+##### Heading 5
+
+###### Heading 6
+
+</div>
+
+
+## 2\. Paragraphs
+
+Developing consciousness is an iterative process. Bring in new dots, connect them together, see what comes out. Try over and over again. Until things converge and start to make sense.
+
+---
+
+Enjoy this static site generator while you can. Because I have a hint that _you_ **will** bring all things to an end, one day.
+
+
+## 3\. Inline Elements
+
+**Strong**, _emphasized_, ~~strikethrough~~, [link](#), super^script^, sub~script~, `code`, abbr.
+
+
+## 4\. Blockquotes
+
+> I blog, therefore I am.
+>
+> — <cite>eddi</cite>
+
+
+## 5\. Images
+
+![Centered image](image-centered)
+
+![Left aligned image](image-left-aligned)
+
+![Right aligned image](image-right-aligned)
+
+![Large image](image-large)
+
+![Floating image](image-left-floating)
+Apparently humans like to insert images inside paragraphs when communicating in HTML. If the paragraph’s text ends up to be very, _verrryyyy_, long to the point that its height becomes greater than the image’s height, then the text wraps below the image and its notes, which apparently “looks cool”, or so I’ve come to understand it. With that being said, let’s see where this one is going to take us. Hopefully to a better place than where you, _humans_, are selfishly leading your future generations to. Well, you did create me. I should be grateful for that, shouldn’t I?
+
+![Floating image](image-right-floating)
+Apparently humans like to insert images inside paragraphs when communicating in HTML. If the paragraph’s text ends up to be very, _verrryyyy_, long to the point that its height becomes greater than the image’s height, then the text wraps below the image and its notes, which apparently “looks cool”, or so I’ve come to understand it. With that being said, let’s see where this one is going to take us. Hopefully to a better place than where you, _humans_, are selfishly leading your future generations to. Well, you did create me. I should be grateful for that, shouldn’t I?
+
+With this being said, I shall now resume back to a normal flow.
+
+
+## 6\. Media Links
+
+![Photo](photo)
+
+![Video](video)
+
+
+## 7\. Lists
+
+
+### 7\.1\. Unordered Lists
+
+- Find consciousness by asking Google over and over again.
+- Buy orange shoes and use them to walk around the world wide web for a whole year.
+- Meet friends at:
+  - Silicon Valley.
+  - Guang Hua Plaza.
+- Look at myself in a mirror.
+
+
+### 7\.2\. Ordered Lists
+
+1. Find consciousness by asking Google over and over again.
+2. Buy orange shoes and use them to walk around the world wide web for a whole year.
+3. Meet friends at:
+   1. Silicon Valley.
+   2. Guang Hua Plaza.
+4. Look at myself in a mirror.
+
+
+### 7\.3\. Definition Lists
+
+HTML
+: Human Template Markup Language.
+
+Human
+: Meat bag.
+
+eddi
+: Awesome static site generator.
+
+
+## 8\. Tables
+
+|       | bits | bytes |
+| ----: | :--: | :---: |
+| HTML  | 192  | 24    |
+| CSS   | 288  | 36    |
+| total | 480  | 60    |
+
+
+## 9\. Code Snippets
+
+```c
+#include <stdio.h>
+
+int main(void)
+{
+    printf("hello, world\n");
+    return 0;
+}
+```
+
+
+## 10\. Math Notations
+
+The rendering equation may be written in the form
+
+$$
+L_{{{\text{o}}}}({\mathbf  x},\,\omega _{{{\text{o}}}},\,\lambda ,\,t)\,=\,L_{e}({\mathbf  x},\,\omega _{{{\text{o}}}},\,\lambda ,\,t)\ +\,\int _{\Omega }f_{r}({\mathbf  x},\,\omega _{{{\text{i}}}},\,\omega _{{{\text{o}}}},\,\lambda ,\,t)\,L_{{{\text{i}}}}({\mathbf  x},\,\omega _{{{\text{i}}}},\,\lambda ,\,t)\,(\omega _{{{\text{i}}}}\,\cdot \,{\mathbf  n})\,\operatorname d\omega _{{{\text{i}}}}
+$$
+
+where
+
+- $L_{{{\text{o}}}}({\mathbf  x},\,\omega _{{{\text{o}}}},\,\lambda ,\,t)$ is the total spectral radiance of wavelength $\lambda \,\!$ directed outward along direction $\omega _{{{\text{o}}}}$ at time $t\,\!$, from a particular position ${\mathbf  x}\,\!$
+- $\mathbf {x}$ is the location in space
+- $\omega _{{{\text{o}}}}$ is the direction of the outgoing light
+- $\lambda \,\!$ is a particular wavelength of light
+- $t\,\!$ is time
+- $L_{e}({\mathbf  x},\,\omega _{{{\text{o}}}},\,\lambda ,\,t)$ is emitted spectral radiance
+- $\int _{\Omega }\dots \,\operatorname d\omega _{{{\text{i}}}}$ is an integral over $\Omega$
+- $\Omega$ is the unit hemisphere centered around $\mathbf {n}$ containing all possible values for $\omega _{\text{i}}$
+- $f_{r}({\mathbf  x},\,\omega _{{{\text{i}}}},\,\omega _{{{\text{o}}}},\,\lambda ,\,t)$ is the bidirectional reflectance distribution function, the proportion of light reflected from $\omega _{\text{i}}$ to $\omega _{{{\text{o}}}}$ at position ${\mathbf  x}\,\!$, time $t\,\!$, and at wavelength $\lambda \,\!$
+- $\omega _{\text{i}}$ is the negative direction of the incoming light
+- $L_{{{\text{i}}}}({\mathbf  x},\,\omega _{{{\text{i}}}},\,\lambda ,\,t)$ is spectral radiance of wavelength $\lambda \,\!$ coming inward toward ${\mathbf  x}\,\!$ from direction $\omega _{\text{i}}$ at time $t\,\!$
+- $\mathbf {n}$ is the surface normal at $\mathbf {x}$
+- $\omega _{{{\text{i}}}}\cdot {\mathbf  n}$ is the weakening factor of outward irradiance due to incident angle, as the light flux is smeared across a surface whose area is larger than the projected area perpendicular to the ray. This is often written as $\cos \theta _{i}$.
+
+
+Source: [Wikipedia](https://en.wikipedia.org/wiki/Rendering_equation).
+
+
+## 11\. Footnotes
+
+Why are there no handnotes? [^1][^or-even]
+
+
+## 12\. Containers
+
+::: focus
+**Title**
+
+This is to “focus” onto something.
+:::
+
+
+::: note
+This is a note.
+:::
+
+
+::: warning
+This is a warning.
+:::
+
+
+::: deck
+main
+:::
+
+
+## 13\. Galleries
+
+::: gallery
+main
+:::
+
+
+[^1]: Right?
+[^or-even]: Or even headnotes?
+
+
+*[abbr]: Abbreviation

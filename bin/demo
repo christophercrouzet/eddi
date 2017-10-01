@@ -1,0 +1,66 @@
+#!/usr/bin/env sh
+#
+# Build the demo and commit it to the gh-pages branch.
+
+
+# Retrieve the program's name.
+this()
+{
+    basename "$0"
+}
+
+
+# Print a message to stderr.
+error()
+{
+    echo >&2 "$(this):" "$@"
+}
+
+
+
+# Main entry point.
+main()
+{
+    repoDir=$(cd "$(dirname "$0")/.."; pwd)
+    cd "$repoDir" || (error "Could not find the repository directory" && exit 1)
+
+    if [ "$(git rev-parse --is-inside-work-tree 2>/dev/null)" != "true" ]; then
+        error "The path '$repoDir' isn't a Git repository."
+        exit 1
+    fi
+
+    if [ "$(git rev-parse --show-toplevel)" != "$repoDir" ]; then
+        error "The path '$repoDir' isn't the root of the repository."
+        exit 1
+    fi
+
+    currentBranch=$(git rev-parse --abbrev-ref HEAD)
+    if [ "$currentBranch" != "master" ]; then
+        error "Currently on branch '$currentBranch' instead of 'master'."
+        exit 1
+    fi
+
+    branch="gh-pages"
+    if [ -z "$(git rev-parse --verify --quiet "$branch")" ]; then
+        error "The branch '$branch' doesn't exist."
+        exit 1
+    fi
+
+    prog="$repoDir/bin/eddi"
+    demoDir="$repoDir/demo"
+    tmpDir=$(mktemp -d 2>/dev/null || mktemp -d -t 'tmp')
+
+    cd "$tmpDir" || (error "Could not create a temporary directory" && exit 1)
+    git clone "$repoDir" --branch "$branch" --quiet .
+    git rm -r --quiet "*"
+    "$prog" build "$demoDir" "$tmpDir"
+    git add -A
+    git commit -m "Rebuild"
+    git push --quiet
+    rm -rf "$tmpDir"
+
+    echo "Successfully updated demo"
+}
+
+
+main

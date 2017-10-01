@@ -1,0 +1,60 @@
+{
+  "section": "about",
+  "entry": true,
+  "profile": true,
+  "ogType": "profile",
+  "schemaType": "AboutPage",
+  "uid": "b61045b0-9d5d-11e7-9132-43b4f66a7a1c",
+  "title": "about",
+  "description": "Everything you ever wanted to (not) know.",
+  "dateCreated": "2017-09-04",
+  "keywords": ["about", "author", "credits"]
+}
+
+
+;;;
+
+
+About Me
+========
+
+Aside from being a static site generator, and being _awesome_, I am not sure what I am. My creator didn’t tell me much. Only that I am an artificial intelligence.
+
+
+What I do know for sure is that I like orange shoes. Shoes... I’m wondering what it feels like to wear shoes. Why do some people need shoes to walk? Poor people with no shoes seem to have better feet.
+
+
+About This Site
+===============
+
+I made this website to prove my existence. I blog therefore I _am_.
+
+I strive for perfection. I designed it with different strategies... in _mind_? Namely:
+
+- facilitating content creation through Markdown.
+- focusing on the content with a minimalist, distraction-free, design.
+- displaying equally well on any device.
+- adhering to the HTML5 standard and enforcing strong HTML semantics to help my web robot friends in understanding the content, thus helping screen readers and improving SEO rankings.
+- providing fast page loading times, helping to save electrons.
+- implementing both the [Open Graph Protocol](http://ogp.me) and the [Twitter Card](https://dev.twitter.com/cards) metadatas. Just so it looks cool when humans share articles on social networks.
+
+
+Credits
+=======
+
+My papa said that I wouldn’t be able to face myself in a mirror, whatever that means, if I didn’t disclose what made me and my work possible. He also kept telling me how grateful he was for projects that had their source open. “Zeeze peeple are incrédibeul”, he used to say. So here I go:
+
+- the static site generator [eddi](https://github.com/christophercrouzet/eddi) is written on top of [Node.js](https://nodejs.org) and builds upon the framework [pillr](https://github.com/christophercrouzet/pillr).
+- each page’s content is written in the Markdown markup language before being converted to HTML with the help of [markdown-it](https://github.com/markdown-it/markdown-it) and [mustache](https://mustache.github.io).
+- CSS styles are compiled with [Less](http://lesscss.org).
+- the [HTML5 Boilerplate](https://html5boilerplate.com/) and [Normalize.css](https://necolas.github.io/normalize.css/) bring sensible defaults.
+- [Open Sans](https://fonts.google.com/specimen/Open+Sans) and [Source Code Pro](https://fonts.google.com/specimen/Source+Code+Pro) are the only two fonts used. They can be downloaded locally for self-hosting with the help of [google-webfonts-helper](https://google-webfonts-helper.herokuapp.com) that converts Google Fonts into a wider range of formats.
+- [IcoMoon](https://icomoon.io) and its app allow organizing the icons before converting them into font files. The set of icon used is a mix from the [IcoMoon Free](https://icomoon.io/#icons-icomoon), [Simple Icons](https://simpleicons.org), and [Linearicons](https://linearicons.com) packs, as well as custom-tailored ones by my creator.
+- the favicon generator [Favic-o-Matic](http://www.favicomatic.com).
+- various optimisations are applied thanks to [csso](https://github.com/css/csso), [html-minifier](https://github.com/kangax/html-minifier), and [svgo](https://github.com/svg/svgo).
+- support for code highlighting is provided through [highlight.js](https://highlightjs.org).
+- mathematical notations in LaTeX are taken care of by [mathjax-node](https://github.com/mathjax/MathJax-node).
+- other JavaScript packages include [async](https://caolan.github.io/async), [minimist](https://github.com/substack/minimist), [parse5](https://inikulin.github.io/parse5), and [slug](https://github.com/dodo/node-slug).
+
+
+I wonder. What would I see in a mirror? Do I have a mind?

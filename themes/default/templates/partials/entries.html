@@ -1,0 +1,26 @@
+{{#first}}
+  <ol class="entries list list_plain">
+{{/first}}
+
+<li>
+  {{#showEntriesItemInfo}}
+    <p class="entry-info entries__item-info">
+      <time datetime="{{dateCreated.date}}">{{dateCreated.pretty}}</time>
+      {{#showEntriesItemInfoCategory}},
+        <span class="entry-info__category">{{category.title}}</span>
+      {{/showEntriesItemInfoCategory}}
+    </p>
+  {{/showEntriesItemInfo}}
+  <p class="entries__item-title">
+    <a class="entries__item-title-link" href="{{{url.full}}}">{{title}}</a>
+  </p>
+</li>
+
+{{#last}}
+  </ol>
+  {{#showUnlistedEntriesItemCount}}
+    {{#unlistedCount}}
+      <footer>... and <a class="entries__more-link" href="{{{indexURL.full}}}">{{.}} more</a>!</footer>
+    {{/unlistedCount}}
+  {{/showUnlistedEntriesItemCount}}
+{{/last}}

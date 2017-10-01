@@ -1,0 +1,28 @@
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+<title>{{title}}</title>
+
+<meta name="author" content="{{author.name}}">
+<meta name="description" content="{{description}}">
+<meta name="keywords" content="{{keywords}}">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+{{#noIndex}}
+  <meta name="robots" content="noindex">
+{{/noIndex}}
+
+{{#faviconURL}}
+  <link rel="icon" href="{{{full}}}">
+{{/faviconURL}}
+{{#appleTouchIconURL}}
+  <link rel="apple-touch-icon" href="{{{full}}}">
+{{/appleTouchIconURL}}
+{{#feedURL}}
+  <link rel="alternate" href="{{{full}}}" title="Feed" type="application/atom+xml">
+{{/feedURL}}
+{{#styleURLs}}
+  <link rel="stylesheet" href="{{{full}}}">
+{{/styleURLs}}
+<link rel="canonical" href="{{{url.full}}}">

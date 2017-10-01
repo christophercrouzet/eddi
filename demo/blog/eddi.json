@@ -1,0 +1,13 @@
+{
+  "layout": "article.html",
+  "section": "blog",
+  "entry": true,
+  "ogType": "article",
+  "entries": {
+    "related": {
+      "section": "blog",
+      "mode": "similar",
+      "limit": 5
+    }
+  }
+}

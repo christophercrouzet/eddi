@@ -1,0 +1,13 @@
+{
+  "layout": "feed.xml",
+  "feed": true,
+  "uid": "be803ef8-9d5d-11e7-a1d8-97b98cc73d3e",
+  "entries": {
+    "main": {
+      "section": "blog"
+    }
+  }
+}
+
+
+;;;

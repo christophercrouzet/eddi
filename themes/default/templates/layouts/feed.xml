@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xml:lang="{{language}}" xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+  <id>urn:uuid:{{uid}}</id>
+  <title>{{title}}</title>
+  {{#entries.main}}
+    {{#first}}
+      <updated>{{dateLatestUpdate.dateTime}}</updated>
+    {{/first}}
+  {{/entries.main}}
+
+  <author>
+    <name>{{author.name}}</name>
+  </author>
+  <link href="{{{url.full}}}" rel="self" type="application/atom+xml" />
+  <link href="{{{siteURL.full}}}" rel="alternate" type="text/html" title="{{title}}" />
+  <subtitle>{{description}}</subtitle>
+
+  {{#entries.main}}
+    <entry>
+      <id>urn:uuid:{{uid}}</id>
+      <title>{{title}}</title>
+      <updated>{{dateUpdated.dateTime}}</updated>
+
+      <published>{{dateCreated.dateTime}}</published>
+      <author>
+        <name>{{author.name}}</name>
+      </author>
+      <link href="{{{url.full}}}" rel="alternate" type="text/html" title="{{title}}" />
+      {{#category}}
+        <category term="{{category.title}}" />
+      {{/category}}
+      {{#thumbnailURL}}
+        <media:thumbnail url="{{{thumbnailURL.full}}}" />
+      {{/thumbnailURL}}
+
+      <content type="html">
+        {{content}}
+      </content>
+    </entry>
+  {{/entries.main}}
+</feed>

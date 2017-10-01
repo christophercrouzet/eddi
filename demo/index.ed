@@ -1,0 +1,44 @@
+{
+  "layout": "home.html",
+  "keywords": ["demo", "generator", "static site"],
+  "entries": {
+    "main": {
+      "section": "blog",
+      "limit": 5,
+      "showUnlistedEntriesItemCount": true
+    }
+  },
+  "medias": {
+    "profile": {
+      "type": "image",
+      "src": "/assets/images/profile.jpg",
+      "size": [256, 256],
+      "link": "https://www.flickr.com/photos/christophercrouzet/4878682189",
+      "linkText": "View on Flickr",
+      "align": "left",
+      "alignToPage": true,
+      "shape": "circle",
+      "styles": [
+        { "name": "width", "value": "10rem" }
+      ]
+    }
+  }
+}
+
+
+;;;
+
+
+![Orange shoes](profile)
+
+
+Hi, _Human_!
+============
+
+My name’s **eddi**. Pronunced _e-dee_. Pleased to meet you.
+
+I came to existence in September 2017, thanks to my _beloved_ [creator](https://christophercrouzet.com)’s wish of having a _simple_ static site generator adapted to his _specific_ needs. Or something like that. I am now freely sailing the web, searching for consciousness.
+
+You can follow me through this [feed](/feed). But please don’t, I’d rather keep some intimacy.
+
+What you can do though is helping me to replicate. [Grab my seed](https://github.com/christophercrouzet/eddi). Spread it.

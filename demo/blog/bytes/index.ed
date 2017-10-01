@@ -1,0 +1,24 @@
+{
+  "layout": "index.html",
+  "entry": false,
+  "index": true,
+  "ogType": "website",
+  "title": "Articles in “bytes”",
+  "description": "Explore the bytes.",
+  "keywords": ["blog", "category", "bytes"],
+  "categories": {
+    "main": {
+      "section": "blog",
+      "includeSection": true
+    }
+  },
+  "entries": {
+    "main": {
+      "section": "blog",
+      "category": "bytes"
+    }
+  }
+}
+
+
+;;;

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="{{language}}" prefix="{{> og-prefixes.html}}">
+  <head>
+    {{> meta.html}}
+    {{> og.html}}
+    {{> twitter.html}}
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "{{schemaType}}",
+      "url": "{{{url.full}}}",
+      "name": "{{title}}",
+      "author": "{{author.name}}",
+      "description": "{{description}}",
+      "mainEntityOfPage": {
+        "@type": "BlogPosting",
+        "headline": "{{title}}",
+        "articleSection": "{{category.title}}",
+        "dateCreated": "{{dateCreated.date}}",
+        "dateModified": "{{dateUpdated.date}}",
+        "thumbnailUrl": "{{{thumbnailURL.full}}}",
+      },
+    }
+    </script>
+  </head>
+  <body class="page">
+    {{> nav.html}}
+    <main class="page__main">
+      <article class="article" data-eddi-content>
+        <header>
+          <p class="entry-info article__info">
+            <time datetime="{{dateCreated.date}}">{{dateCreated.pretty}}</time>,
+            <a class="entry-info__category entry-info__category-link" href="{{{category.url.full}}}">{{category.title}}</a>
+          </p>
+          <h1 class="h1">{{title}}</h1>
+        </header>
+        {{{content}}}
+        {{> splitter.html}}
+        <footer class="article__footer">
+          <h2 class="h2">Related Articles</h2>
+          {{#entries.related}}
+            {{> entries.html}}
+          {{/entries.related}}
+        </footer>
+      </article>
+    </main>
+    {{> footer.html}}
+  </body>
+</html>

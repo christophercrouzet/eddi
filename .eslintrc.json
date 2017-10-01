@@ -1,0 +1,17 @@
+{
+  "env": {
+    "browser": false,
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "airbnb-base"
+  ],
+  "plugins": [
+    "import"
+  ],
+  "rules": {
+    "arrow-body-style": "off",
+    "no-console": "off"
+  }
+}

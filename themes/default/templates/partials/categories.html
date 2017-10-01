@@ -1,0 +1,11 @@
+{{#first}}
+  <ul class="categories list list_plain page__categories">
+{{/first}}
+
+<li class="categories__item {{#current}}categories__item_current{{/current}}">
+  <a class="categories__item-link" href="{{{url.full}}}">{{title}}</a>
+</li>
+
+{{#last}}
+  </ul>
+{{/last}}

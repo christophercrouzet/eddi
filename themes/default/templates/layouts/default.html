@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="{{language}}" prefix="{{> og-prefixes.html}}">
+  <head>
+    {{> meta.html}}
+    {{> og.html}}
+    {{> twitter.html}}
+
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "{{schemaType}}",
+      "url": "{{{url.full}}}",
+      "name": "{{title}}",
+      "author": "{{author.name}}",
+      "description": "{{description}}",
+    }
+    </script>
+  </head>
+  <body class="page">
+    {{> nav.html}}
+    <main class="page__main" data-eddi-content>
+      {{{content}}}
+    </main>
+    {{> footer.html}}
+  </body>
+</html>

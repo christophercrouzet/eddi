@@ -1,0 +1,60 @@
+{
+  "layout": "default.html",
+  "baseURL": "/",
+  "title": "Eddi",
+  "description": "Demo of Eddi, a static site generator.",
+  "fields": {
+    "dates": [
+      "education.date",
+      "experience.from",
+      "experience.to"
+    ],
+    "urls": [
+      "aboutSiteURL",
+      "appleTouchIconURL",
+      "author.profileURL",
+      "category.url",
+      "faviconURL",
+      "feedURL",
+      "greyLogoURL",
+      "logoURL",
+      "menu.url",
+      "socialBar.url",
+      "styleURLs",
+      "thumbnailURL",
+      "whiteLogoURL"
+    ]
+  },
+  "language": "en",
+  "ogType": "website",
+  "schemaType": "WebPage",
+  "author": {
+    "name": "Eddi",
+    "givenName": "Eddi",
+    "familyName": "Eddi",
+    "email": "hi@iameddi.com",
+    "profileURL": "/about"
+  },
+  "menu": [
+    { "title": "Home", "icon": "home", "url": "/", "accessKey": 1 },
+    { "title": "Blog", "icon": "pencil", "url": "/blog", "accessKey": 2 },
+    { "title": "Résumé", "icon": "history", "url": "/resume", "accessKey": 3 },
+    { "title": "About", "icon": "users", "url": "/about", "accessKey": 4 }
+  ],
+  "socialBar": [
+    { "title": "Email", "icon": "email", "url": "mailto:hi@iameddi.com" },
+    { "title": "GitHub", "icon": "github", "url": "https://github.com/christophercrouzet/eddi" },
+    { "title": "Feed", "icon": "feed", "url": "/feed", "urlType": "application/atom+xml" }
+  ],
+  "aboutSiteURL": "/about#about-this-site",
+  "appleTouchIconURL": "/assets/images/apple-touch-icon.png",
+  "faviconURL": "/favicon.ico",
+  "feedURL": "/feed",
+  "logoURL": "/assets/images/logo.svg",
+  "greyLogoURL": "/assets/images/logo-grey.svg",
+  "whiteLogoURL": "/assets/images/logo-white.svg",
+  "styleURLs": [
+    "/assets/styles/main.css"
+  ],
+  "thumbnailURL": "/assets/images/thumbnail.png"
+}

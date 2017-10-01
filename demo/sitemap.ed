@@ -1,0 +1,16 @@
+{
+  "layout": "sitemap.xml",
+  "sitemap": true,
+  "updateFrequency": "monthly",
+  "categories": {
+    "main": {
+      "includeSection": true
+    }
+  },
+  "entries": {
+    "main": {}
+  }
+}
+
+
+;;;
