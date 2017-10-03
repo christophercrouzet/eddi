@@ -10,16 +10,22 @@
       "@type": "{{schemaType}}",
       "url": "{{{url.full}}}",
       "name": "{{title}}",
-      "author": "{{author.name}}",
       "description": "{{description}}",
       "mainEntityOfPage": {
         "@type": "BlogPosting",
         "headline": "{{title}}",
+        "author": {
+          "@type": "Person",
+          "givenName": "{{author.givenName}}",
+          "familyName": "{{author.familyName}}",
+          "name": "{{author.name}}"
+        },
         "articleSection": "{{category.title}}",
         "dateCreated": "{{dateCreated.date}}",
+        "datePublished": "{{dateCreated.date}}",
         "dateModified": "{{dateUpdated.date}}",
-        "thumbnailUrl": "{{{thumbnailURL.full}}}",
-      },
+        "image": "{{{thumbnailURL.full}}}"
+      }
     }
     </script>
   </head>
