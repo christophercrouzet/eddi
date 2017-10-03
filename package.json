@@ -9,7 +9,12 @@
   },
   "author": "Christopher Crouzet",
   "license": "MIT",
-  "keywords": ["generator", "markdown", "static", "site"],
+  "keywords": [
+    "generator",
+    "markdown",
+    "static",
+    "site"
+  ],
   "repository": "christophercrouzet/eddi",
   "homepage": "https://github.com/christophercrouzet/eddi",
   "bugs": "https://github.com/christophercrouzet/eddi/issues",
