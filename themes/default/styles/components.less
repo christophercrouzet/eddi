@@ -293,12 +293,21 @@
     max-width: @size_m;
   }
 
+  &__back-ref {
+    .visuallyhidden();
+  }
+
   &__list {}
 
   &__item {}
 
   &__link {
     .link-not-underlined();
+    .icon-return();
+
+    &:before {
+      font-size: 0.75em;
+    }
   }
 }
 
