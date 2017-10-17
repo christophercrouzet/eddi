@@ -1,0 +1,30 @@
+{{#author}}
+  "author": {
+    "@type": "{{schemaType}}",
+    {{#givenName}}
+      "givenName": "{{{givenName}}}",
+    {{/givenName}}
+    {{#familyName}}
+      "familyName": "{{{familyName}}}",
+    {{/familyName}}
+    {{#address}}
+      "address": 
+      {{#@type}}
+        {
+          "@type": "{{.}}",
+          "streetAddress": "{{{streetAddress}}}",
+          "addressLocality": "{{{addressLocality}}}",
+          "postalCode": "{{{postalCode}}}",
+          "addressRegion": "{{{addressRegion}}}",
+          "addressCountry": "{{{addressCountry}}}",
+          "name": "{{{address.name}}}"
+        }
+      {{/@type}}
+      {{^@type}}
+        {{.}}
+      {{/@type}}
+      ,
+    {{/address}}
+    "name": "{{{name}}}"
+  }
+{{/author}}

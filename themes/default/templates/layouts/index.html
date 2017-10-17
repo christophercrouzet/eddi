@@ -19,12 +19,7 @@
             {
               "@type": "BlogPosting",
               "headline": "{{title}}",
-              "author": {
-                "@type": "Person",
-                "givenName": "{{author.givenName}}",
-                "familyName": "{{author.familyName}}",
-                "name": "{{author.name}}"
-              },
+              {{> author.html}},
               "articleSection": "{{category.title}}",
               "dateCreated": "{{dateCreated.date}}",
               "datePublished": "{{dateCreated.date}}",

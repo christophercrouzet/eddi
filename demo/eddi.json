@@ -30,6 +30,7 @@
   "ogType": "website",
   "schemaType": "WebPage",
   "author": {
+    "schemaType": "Person",
     "name": "Eddi",
     "givenName": "Eddi",
     "familyName": "Eddi",

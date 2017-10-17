@@ -11,12 +11,7 @@
       "@type": "{{schemaType}}",
       "url": "{{{url.full}}}",
       "name": "{{title}}",
-      "author": {
-        "@type": "Person",
-        "givenName": "{{author.givenName}}",
-        "familyName": "{{author.familyName}}",
-        "name": "{{author.name}}"
-      },
+      {{> author.html}},
       "description": "{{description}}"
     }
     </script>
