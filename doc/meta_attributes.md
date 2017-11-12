@@ -15,6 +15,63 @@ Meta Attributes
 Base URL for the site, e.g.: `'https://zcrou.com'`.
 
 
+## `carousels`
+
+**Signature**
+
+```js
+"carousels": {
+  "NAME": {
+    "name": string,
+    "previousIcon: 'previous',
+    "nextIcon: 'next',
+    "styles": [
+      { "name": string, "value": string },
+      ...
+    ],
+    "medias": [string, ...]
+  },
+  ...
+}
+```
+
+
+**Description**
+
+List of slideshow images to make available to the user from within the page's content following the Markdown's container extension syntax:
+
+```md
+::: carousel
+NAME
+:::
+```
+
+Where `NAME` is the name of the carousel to render.
+
+
+**Options**
+
+- `name: string` (optional)
+
+  Name to use for the input nodes. Default value: `'carousel'`.
+
+- `previousIcon: string` (optional)
+
+  Icon to use for the button taking to the previous image. Default value: `'previous'`.
+
+- `nextIcon: string` (optional)
+
+  Icon to use for the button taking to the next image. Default value: `'next'`.
+
+- `styles: [{ "name": string, "value": string }, ...]` (optional)
+
+  Extra CSS styles to set on the carousel HTML node.
+
+- `medias: [string, ...]` (optional)
+
+  Media names to use for the carousel. These media names need to reference existing medias defined in the same page through the [`medias`](#medias) meta attribute. Default value: `[]`.
+  
+  
 ## `categories`
 
 **Signature**
