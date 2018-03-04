@@ -55,6 +55,7 @@ $ npm install eddi
 Sites using Eddi include:
 
 - [zcrou.com](https://zcrou.com)
+- [zedcafe.vn](https://zedcafe.vn)
 
 
 ## Author
